@@ -10,46 +10,6 @@ format:
 ---
 
 
-To get the [Closeread](https://closeread.dev/) extension to work, you need to run the following command in the terminal (bottom tab near the console).
-
-1. Make sure the terminal is in the same directory as this .qmd file.
-2. Run the following command in the terminal: `quarto add qmd-lab/closeread`
-
-This should create a `_extensions` directory that has the javascript code needed to run the closeread document.
-
-
-
-If this doesn't work you might have to start a new terminal by going to Tools at the top of the RStudio menu, then click on terminal, then click on new terminal. 
-
-You might also need to install Quarto if it has not already been installed with RStudio. You can install Quarto from [this webpage](https://quarto.org/docs/download/)
-
-
-
-
-<!--  Please run the code in the  R chunk below once. This will download data 
-and images needed for these exercises.  -->
-
-```{r message=FALSE, warning = FALSE, echo = FALSE, eval = FALSE}
-
-SDS230::download_image("waldo.jpg")
-
-```
-
-
-
-
-$\\$
-
-
-
-## Closeread basics
-
-
-Let's start with a basic close read section `{.cr-section}` where we scroll text over an R graphic.
-
-
-
-
 ::::{.cr-section}
 
 
@@ -75,21 +35,6 @@ hist(rnorm(100))
 
 ::::
 
-
-
-
-$\\$
-
-
-
-## Highlighting
-
-
-Let's now explore highlighting text and code. 
-
-As always, we start by wrapping everything in a `{.cr-section}`.
-
-Let's first highlight some code, and then let's highlight some text. 
 
 
 
@@ -137,21 +82,6 @@ We were able to do this highlighting by putting tags on individual words!
 
 ::::
 
-
-
-$\\$
-
-
-
-## Zooming
-
-
-Let's now explore zooming in on a specific part an image.
-
-
-As always, we start by wrapping everything in a `{.cr-section}`.
-
-Let's first zoom in on the histogram from the previous section.
 
 
 
